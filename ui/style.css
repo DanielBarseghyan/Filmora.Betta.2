@@ -1,0 +1,457 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
+}
+
+.app {
+    height: 100vh;
+    width: 100%;
+    background: #001;
+    display: flex;
+   
+}
+
+.navBar {
+    height: 100%;
+    width: 5%;
+    min-width: 65px;
+    padding: 60px 0;
+    color: white;
+    font-size: 20px;
+    background-color: #000814;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.navItem {
+    cursor: pointer;
+    border-left: 3px solid rgba(0, 0, 0, 0);
+    padding: 10px 0;
+    transition: .3s;
+}
+
+.navItem:hover {
+    color: red;
+}
+
+.activ {
+    color: red;
+}
+
+.newFilms {
+    font-size: 30px;
+}
+
+.closeBt {
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.content {
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+    overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.filmbord {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: space-around;
+
+}
+
+.card {
+    padding: 10px;
+    background-color: #000814;
+    display: inline-block;
+    width: 220px;
+    position: relative;
+
+}
+
+.card img {
+    width: 100%;
+}
+
+.des {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.add {
+    position: absolute;
+    font-size: 25px;
+    margin: 5px;
+    color: transparent;
+    cursor: pointer;
+    transition: .3s;
+    padding: 3px;
+}
+
+.card:hover .add {
+    color: red
+}
+
+.des h4:hover {
+    color: #FFC300;
+    cursor: pointer;
+}
+
+.pageControl {
+    padding: 20px 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pg {
+    padding: 5px;
+    border: 2px solid red;
+    border-radius: 30px;
+}
+
+.curPg {
+    background-color: red;
+}
+
+.popUp {
+    overflow-y: auto;
+    position: fixed;
+    transition: .3s;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.706);
+    backdrop-filter: blur(2px);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popOpen {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popBody {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 30px 30px;
+    transition: .3s;
+}
+
+.zamok {
+    width: 20%;
+    left: 3%;
+    transform: scale(1.7) rotate(315deg);
+    min-width: 100px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+.popCantent {
+    transition: .3s;
+    width: 70%;
+    height: 80%;
+    background-color: #000814;
+    padding: 15px 25px;
+    transform: translate(0px, -25px);
+}
+
+.hid {
+    transform: translate(0px, -60px);
+}
+
+.elbar {
+    display: flex;
+    justify-content: flex-end;
+    color: red;
+    font-size: 20px;
+}
+
+.filmInf {
+    display: flex;
+    column-gap: 20px;
+}
+
+.sevedFilmList {
+    color: #FFC300;
+}
+
+.descIt {
+    color: #FFC300;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+tr {
+    display: flex;
+    justify-content: flex-start
+}
+
+.imgWrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.imgWrap img {
+    width: 100%;
+    min-width: 250px;
+}
+
+.imgWrap:hover .play {
+    color: red;
+}
+
+.imgWrap a {
+    position: absolute;
+}
+
+.play {
+
+    font-size: 45px;
+    color: rgba(255, 0, 0, 0);
+    cursor: pointer;
+}
+.navBar i{
+padding: 5px;
+}
+.navBar i:active{
+    color: red;
+}
+.serchBar {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.serchArea{
+    width: 40%;
+    margin: 0;
+    padding: 10px;
+    background-color: #001;
+    border: 2px solid #FFC300;
+    outline: none;
+    border-radius: 15px;
+    color: white;
+}
+
+.find {
+    width: fit-content;
+    transition: .3s;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid #FFC300;
+    border-radius: 15px;
+}
+
+.find:hover {
+    background-color: #FFC300;
+    color: #000814;
+}
+
+.serch {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.janrSerch {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.catalog span {
+    transition: .3s;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 2px solid #FFC300;
+    cursor: pointer;
+}
+
+.catalog span:hover {
+    background: #FFC300;
+    color: #000814;
+}
+
+.act {
+    background: #FFC300;
+    color: #000814;
+}
+
+.result {
+    padding: 15px 10px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.myFilms {
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+}
+
+.myFilms::-webkit-scrollbar {
+    display: none;
+}
+
+.moreInfo {
+    padding: 10px;
+    display: flex;
+}
+
+.moreInfo img {
+    margin: 10px;
+    max-width: 240px;
+}
+
+.result::-webkit-scrollbar {
+    display: none;
+}
+
+.colaps {
+    display: flex;
+}
+
+.machCard {
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    margin: 10px;
+}
+
+.machCard img {
+    max-width: 120px;
+}
+
+.machFTit {
+    position: absolute;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    background-color: transparent;
+}
+
+.machCard:hover .machFTit {
+    color: #FFC300;
+    background-color: #00081483;
+    transition: .3s;
+}
+
+.registrate {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    padding: 30px 30px 0px;
+}
+
+.regIcon {
+    border: 2px solid #ffc300;
+    padding: 10px 13px;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: .3s;
+    margin-bottom: 20px;
+}
+
+.regBtn {
+    cursor: pointer;
+    border: 2px solid #ffc300;
+    padding: 5px 10px;
+    transition: .3s;
+}
+
+.regIcon:hover,
+.regBtn:hover {
+    background-color: #ffc300;
+    color: #001;
+}
+
+.mi {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.mi a {
+    text-decoration: none;
+    color: #ffc300;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.regInps {
+    outline: none;
+    padding: 6px 11px;
+    font-size: 17px;
+    color: #ffc300;
+    background: #001;
+    border: 2px solid #FFC300;
+    margin: 5px 0px;
+    border-radius: 13px;
+}
+
+.regNow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registSec {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub1 {
+    width: fit-content;
+    padding: 10px 15px;
+    border: 2px solid #ffc300;
+    color: #ffc300;
+    background-color: transparent;
+    border-radius: 13px;
+    margin: 10px;
+    transition: .3s;
+}
+
+.sub1:hover {
+    color: #000814;
+    background-color: #FFC300;
+}

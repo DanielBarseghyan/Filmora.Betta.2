@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text&display=swap" rel="stylesheet">
+    <!--? ///////   FONTS   //////// -->
+    <script src="https://kit.fontawesome.com/c95693eb56.js" crossorigin="anonymous"></script>
+    <!--? ////////  ICONS  ///////// -->
+    <link rel="stylesheet" href="./ui/style.css">
+    <link rel="stylesheet" href="./ui/medya.css">
+    <!-- ?  ////////   CSS   //////// -->
+    <title>Filmora</title>
+</head>
+
+<body>
+    <div class="app">
+        <nav class="navBar">
+
+            <i class="fa-solid fa-house navItem activ" id="mainPg"></i>
+
+            <i class="fa-solid fa-magnifying-glass navItem" id="serch"></i>
+
+            <i class="fa-solid fa-bookmark navItem" id="bookmarks"></i>
+
+            <i class="fa-solid fa-user navItem" id="user"></i>
+
+        </nav>
+        <div class="content">
+            <div class="heding">
+                <h2 class="newFilms">Популярные фильмы <span style="color:#FFC300;">2021-2023</span></h2>
+            </div>
+            <div class="filmbord">
+
+            </div>
+            <div class="pageControl">
+                <!-- <span class="prev arrow"><i class="fa-solid fa-arrow-left"></i></span>
+                <span class="next arrow"><i class="fa-solid fa-arrow-right"></i></span> -->
+
+            </div>
+        </div>
+    </div>
+    <div class="popUp" id="popUp">
+        <div class="popBody">
+            <div class="popCantent hid">
+                <h2 id="meniuSecName"></h2>
+                <div class="elbar"><i class="fa-solid fa-xmark closeBt"></i></div>
+                <div class="filmInf">
+                    <div class="registrate">
+                        <span class="regIcon">
+                            <i class="fa-regular fa-user"></i>
+                        </span>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <script src="./js/helper.js"></script>
+        <script type="module" src="./js/pages.js"></script>
+        <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>

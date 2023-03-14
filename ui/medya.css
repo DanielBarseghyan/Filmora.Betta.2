@@ -1,0 +1,142 @@
+@media only screen and (max-width: 1050px) {
+    .card {
+        width: 180px;
+    }
+
+    .popCantent {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .card {
+        width: 130px;
+    }
+
+    .filmInf {
+        flex-direction: column;
+    }
+
+    .imgWrap {
+        align-items: center;
+        width: auto;
+    }
+
+    .imgWrap img {
+        min-width: 200px;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    table:nth-last-child() {
+        display: flex;
+        flex-direction: column
+    }
+
+    .moreInfo {
+        flex-direction: column;
+    }
+
+    .opisanie {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colaps {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .serchArea {
+        width: 70%;
+    }
+
+    .serchBar {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .descr h2 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .app {
+        flex-direction: column-reverse;
+    }
+
+    .content {
+        padding-bottom: 15%;
+    }
+
+    .navBar {
+        width: 100%;
+        height: auto;
+        padding: 13px 0px;
+        flex-direction: row;
+        border: none !important;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    .filmbord {
+        padding: 10px 0px;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 110px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .popCantent {
+        width: 95%;
+        padding: 20px 15px;
+    }
+
+    .filmbord {
+        padding: 10px 0px;
+        justify-content: space-evenly;
+    }
+
+    .machCard img {
+        max-width: 85px;
+    }
+
+    .regRow1 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .janrSerch {
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .regInps {
+        font-size: 10px;
+    }
+
+    .sub1 {
+        font-size: 10px;
+    }
+
+    .janrSerch {
+        font-size: 10px;
+    }
+
+    table {
+        font-size: 10px;
+    }
+
+    .name {
+        font-size: 10px;
+    }
+}
