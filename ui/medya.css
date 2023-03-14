@@ -68,8 +68,8 @@
         flex-direction: column-reverse;
     }
 
-    .content {
-        padding-bottom: 15%;
+    .pageControl {
+        margin-bottom: 15%;
     }
 
     .navBar {
@@ -80,9 +80,11 @@
         border: none !important;
         position: absolute;
         bottom: 0;
-        z-index: 2;
+        z-index: 1;
     }
-
+    .popUp{
+    z-index:2;
+    }
     .filmbord {
         padding: 10px 0px;
         justify-content: space-between;
